@@ -2,9 +2,15 @@
   "name": "pivotal-project-three",
   "version": "1.0.0",
   "description": "Pivotal - Project Management Web Application",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "11.6.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd ./client && npm start \" ",
+    // "test": "echo \"Error: no test specified\" && exit 1”,
+    "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
