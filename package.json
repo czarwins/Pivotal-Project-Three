@@ -1,5 +1,5 @@
 {
-  "name": "Pivotal-Project-Three",
+  "name": "pivotal-project-three",
   "version": "1.0.0",
   "description": "Pivotal - Project Management Web Application",
   "main": "server.js",
