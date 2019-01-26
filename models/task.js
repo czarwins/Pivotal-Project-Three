@@ -8,9 +8,9 @@ const Task = new Schema({
     potentialImpact: String,
     severity: Number,
     potentialCause: String,
-    occurence:Number,
+    occurence: Number,
     preventionControls: String,
-    detection:Number,
+    detection: Number,
     rpn: Number,
     notes: [{
         type: Schema.Types.ObjectId,
