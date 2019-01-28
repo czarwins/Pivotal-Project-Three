@@ -4,14 +4,11 @@ const Schema = mongoose.Schema
 const Task = new Schema({
     type: String,
     processStep: String,
-    failureType: String,
-    potentialImpact: String,
-    severity: Number,
-    potentialCause: String,
-    occurence: Number,
-    preventionControls: String,
-    detection: Number,
-    rpn: Number,
+    subtaskIds:[{
+        type: Schema.Types.ObjectId,
+        ref: 'Subtask'
+    }]
+    ,
     notes: [{
         type: Schema.Types.ObjectId,
         ref: 'Note'
