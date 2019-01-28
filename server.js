@@ -1,13 +1,17 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const routes = require('./routes');
 
-app.use(express.static(__dirname + '/client/build/'))
+app.use(express.static(__dirname + '/client/build/'));
 
 app.get('/', (req, res) => {
-res.sendFile(__dirname + '/client/build/index.html')
-})
+    res.sendFile(__dirname + '/client/build/index.html');
+});
 
-const PORT = process.env.PORT || 3001
+app.use('/', routes);
+
+const PORT = process.env.PORT || 3001;
+
 app.listen(PORT, () => {
-console.log(`Server is listening on PORT: ${PORT}`)
+    console.log(`Server is listening on PORT: ${PORT}`)
 })

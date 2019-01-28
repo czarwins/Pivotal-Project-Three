@@ -7,13 +7,15 @@ const Task = new Schema({
     subtaskIds:[{
         type: Schema.Types.ObjectId,
         ref: 'Subtask'
-    }]
-    ,
+    }],
     notes: [{
         type: Schema.Types.ObjectId,
         ref: 'Note'
-    }]
-
+    }],
+    projectId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Project'
+    }
 })
 
 module.exports = mongoose.model('Task', Task)

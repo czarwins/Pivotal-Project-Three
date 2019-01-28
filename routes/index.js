@@ -15,7 +15,8 @@ router.get('/api/tasks/:taskId', taskController.show)
 router.delete('/api/tasks/:taskId', taskController.delete)
 router.patch('/api/tasks/:taskId', taskController.update)
 // router.get('/api/tasks/:taskId/subtasks', taskController.createSubtask)
-// router.patch('/api/tasks/:taskId/:subtaskId', taskController.updateSubtask)
+router.get('/api/tasks/:taskId/subtasks', taskController.showSubtasks)
+router.patch('/api/subtasks/:subtaskId', taskController.updateSubtask)
 router.post('/api/projects/:projectId/tasks', taskController.create)
 
 module.exports = router

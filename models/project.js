@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const Project = new Schema({
     name: String,
     type: String,
-    tasks:[{
+    taskIds:[{
         type: Schema.Types.ObjectId,
         ref: 'Task'
     }]

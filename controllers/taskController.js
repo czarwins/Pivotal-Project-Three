@@ -55,6 +55,10 @@ const tasksController = {
                 res.send(updatedSubtask)
             })
     },
+
+    showSubtasks: (req, res) => {
+
+    },
     
     createSubtask: (req, res) => {
         var taskId = req.params.taskId
