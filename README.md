@@ -8,6 +8,9 @@ Pivotal - Project Management Web Application that allows you to create process i
 <h2>Storyboard:</h2> https://trello.com/b/BzmhyIV3/wdi-project-2-czr
 
 <h2>Technologies:</h2> 
+<li>HTML5</li>
+<li>CSS3</li>
+<li>EcmaScript</li>
 <li>MongoDB</li>
 <li>Mongoose</li>
 <li>Express</li>
@@ -21,6 +24,7 @@ Pivotal - Project Management Web Application that allows you to create process i
 <h2>Heroku:</h2> https://pivotalpm.herokuapp.com/
 
 <h2>Wire Frame:</h2> https://vectr.com/c-z-r/cnb2IpoGD Wire Frame images can also be found in the images folder.
+<img src="./public/images/PivotalWF1.jpg"/>
 
 <h2>Features:</h2>
 <li>CRUD</li>
