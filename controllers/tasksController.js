@@ -1,6 +1,5 @@
 const Project = require('../models/Project')
 const Task = require('../models/Task')
-const Subtask = require('../models/Subtask')
 
 const tasksController = {
     index: (req, res) => {
@@ -32,7 +31,6 @@ const tasksController = {
                 res.send(updatedTask)
             })
     },
-    
     create: (req, res) => {
         var projectId = req.params.projectId
         Project.findById(projectId)
@@ -44,33 +42,6 @@ const tasksController = {
                         project.tasks.push(newTask)
                         project.save()
                         res.send(newTask)
-                    })
-            })
-    },
-    updateSubtask: (req, res) => {
-        var subtaskId = req.params.subtaskId
-        Subtask.findByIdAndUpdate(subtaskId, req.body, { new: true })
-            .then((updatedSubtask) => {
-                updatedSubtask.save()
-                res.send(updatedSubtask)
-            })
-    },
-
-    showSubtasks: (req, res) => {
-
-    },
-    
-    createSubtask: (req, res) => {
-        var taskId = req.params.taskId
-        Task.findById(taskId)
-            .then((task) => {
-                console.log(task)
-                Subtask.create(req.body)
-                    .then((newSubtask) => {
-                        console.log(newSubtask)
-                        task.subtaskIds.push(newSubtask)
-                        task.save()
-                        res.send(newSubtask)
                     })
             })
     }
