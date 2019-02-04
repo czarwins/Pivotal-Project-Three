@@ -5,7 +5,7 @@ Pivotal - Project Management Web Application that allows you to create process i
 
 
 
-<h2>Storyboard:</h2> https://trello.com/b/BzmhyIV3/wdi-project-2-czr
+<h2>Storyboard:</h2>  <a href="https://trello.com/b/BzmhyIV3/wdi-project-2-czr">Click here</a> to view Trello
 
 <h2>Technologies:</h2> 
 <li>HTML5</li>
@@ -21,10 +21,10 @@ Pivotal - Project Management Web Application that allows you to create process i
 <li>Reactstrap</li>
 <li>React router</li>
 
-<h2>Heroku:</h2> https://pivotalpm.herokuapp.com/
+<h2>Heroku:</h2>  <a href="https://pivotalpm.herokuapp.com/">Click here</a> to view demo.
 
-<h2>Wire Frame:</h2> https://vectr.com/c-z-r/cnb2IpoGD Wire Frame images can also be found in the images folder.
-<img src="./public/images/PivotalWF1.jpg"/>
+<h2>Wire Frame:</h2>  <a href="https://vectr.com/c-z-r/cnb2IpoGD">Wire Frame </a>images can also be found in the images folder.
+
 
 <h2>Features:</h2>
 <li>CRUD</li>
