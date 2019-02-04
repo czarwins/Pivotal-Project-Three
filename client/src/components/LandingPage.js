@@ -5,9 +5,7 @@ import styled from 'styled-components'
 
 const LandingPageStyle = styled.div`
     text-align: center;
-    background-image: linear-gradient( navy,lavender);
     padding: 20px;
-    margin: 0;
 `
 
 

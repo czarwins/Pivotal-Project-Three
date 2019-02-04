@@ -45,7 +45,22 @@ class ProjectDetails extends Component {
     toggleEditProjectForm = () => {
         this.setState({ editFormVisible: !this.state.editFormVisible })
     }
+    handleEditChange = (event) => {
+        const newState = { ...this.state.project }
+        newState[event.target.name] = event.target.value
+        this.setState({ project: newState })
+    }
 
+    handleEditSubmit = (event) => {
+        event.preventDefault()
+        const payload = this.state.project
+        const projectId = this.props.projectId
+        axios.patch(`/api/projects/${projectId}`, payload)
+        .then((res) => {
+            this.props.getSingleProject()
+            this.props.toggleEditProjectForm()
+        })
+    }
     createNewTask = () => {
         // taskController Create route
         // update the state with the new tasks
@@ -106,7 +121,7 @@ class ProjectDetails extends Component {
                     </button>
                     <button 
                         style={buttonStyle}
-                        onClick={() => {}}
+                        onClick={this.toggleEditProjectForm}
                     >
                         Edit Project
                     </button>

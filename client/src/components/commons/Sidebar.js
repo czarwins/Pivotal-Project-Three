@@ -4,7 +4,9 @@ import { Col } from 'reactstrap';
 import styled from 'styled-components'
 
 const SidebarStyles = styled.div`
-    background-image: linear-gradient( navy, lavender);
+    background-image: url('../../images/sidebarbg.webp');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     height: 100vh;
 `
 
