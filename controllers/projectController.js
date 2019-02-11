@@ -1,7 +1,7 @@
 const Project = require('../models/Project')
 const Task = require('../models/Task')
 
-const ProjectController = {
+const ProjectController = { 
     index: (req, res) => {
         Project.find({})
             .then((projects) => {
