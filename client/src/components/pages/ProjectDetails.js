@@ -79,8 +79,8 @@ class ProjectDetails extends Component {
 
     deleteTask = () => {
         // event.preventDefault()
-        console.log(taskId)
         const taskId = this.props.match.params.taskId
+        console.log(taskId)
         axios.delete(`/api/tasks/${taskId}`).then(() => {
             this.props.getSingleProject()
         })
