@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const ProjectController = require('../controllers/projectController')
+const ProjectController = require('../controllers/ProjectController')
 const tasksController = require('../controllers/tasksController')
 
 router.get('/api/projects', ProjectController.index)
